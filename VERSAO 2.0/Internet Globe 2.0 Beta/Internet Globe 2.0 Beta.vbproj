@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F88CB7DC-2CE2-4D1B-83DC-7B8B339BA055}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Internet_Globe_2._0_Beta.My.MyApplication</StartupObject>
+    <RootNamespace>Internet_Globe_2._0_Beta</RootNamespace>
+    <AssemblyName>Internet Globe 2.0 Beta</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <ApplicationIcon>ICONE\icone.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Internet Globe 2.0 Beta.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Internet Globe 2.0 Beta.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="geckofx-12, Version=10.0.0.0, Culture=neutral, PublicKeyToken=3209ac31600d1857, processorArchitecture=x86" />
+    <Reference Include="Interop.SpeechLib, Version=5.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Extencoes de aplicativos\TTS\Motores\Motor 1\Interop.SpeechLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.Compatibility">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SkinSoft.VisualStyler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0fda9f423e1d9830, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Design">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Management">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WinTabControl1.0, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Extencoes de aplicativos\Tabs\Novo\WinTabControl1.0\WinTabControl1.0.dll</HintPath>
+    </Reference>
+    <Reference Include="WinUI.Controls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Extencoes de aplicativos\IE7_style_TravelButton_src2\IE7_style_TravelButton_src\App\WinUI.Controls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FORMULARIOS\FORMULARIO CAIXA DE AVISOS.Designer.vb">
+      <DependentUpon>FORMULARIO CAIXA DE AVISOS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMULARIOS\FORMULARIO CAIXA DE AVISOS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIOS\FORMULARIO DE FAVORITOS.Designer.vb">
+      <DependentUpon>FORMULARIO DE FAVORITOS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMULARIOS\FORMULARIO DE FAVORITOS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIOS\FORMULARIO DE NAVEGACAO PRINCIPAL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIOS\FORMULARIO DE NAVEGACAO PRINCIPAL.Designer.vb">
+      <DependentUpon>FORMULARIO DE NAVEGACAO PRINCIPAL.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIOS\FORMULARIO DE PLUGINS INSTALADOS.Designer.vb">
+      <DependentUpon>FORMULARIO DE PLUGINS INSTALADOS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMULARIOS\FORMULARIO DE PLUGINS INSTALADOS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIOS\FORMULARIO DE VOZ.Designer.vb">
+      <DependentUpon>FORMULARIO DE VOZ.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMULARIOS\FORMULARIO DE VOZ.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIOS\FORMULARIO EXIBIDOR DE HISTORICO.Designer.vb">
+      <DependentUpon>FORMULARIO EXIBIDOR DE HISTORICO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMULARIOS\FORMULARIO EXIBIDOR DE HISTORICO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIOS\FORMULARIO GERADOR DE IMAGENS DE ABAS.Designer.vb">
+      <DependentUpon>FORMULARIO GERADOR DE IMAGENS DE ABAS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMULARIOS\FORMULARIO GERADOR DE IMAGENS DE ABAS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIOS\FORMULARIO GERENCIADOR DE POPUPS.Designer.vb">
+      <DependentUpon>FORMULARIO GERENCIADOR DE POPUPS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMULARIOS\FORMULARIO GERENCIADOR DE POPUPS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIOS\FORMULARIO INTELIGENCIA DE PROCESSAMENTO.Designer.vb">
+      <DependentUpon>FORMULARIO INTELIGENCIA DE PROCESSAMENTO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMULARIOS\FORMULARIO INTELIGENCIA DE PROCESSAMENTO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIOS\FORMULARIO PAINEL DE CONTROLE.designer.vb">
+      <DependentUpon>FORMULARIO PAINEL DE CONTROLE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMULARIOS\FORMULARIO PAINEL DE CONTROLE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIOS\FORMULARIO SALVAR ABAS ABERTAS.Designer.vb">
+      <DependentUpon>FORMULARIO SALVAR ABAS ABERTAS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMULARIOS\FORMULARIO SALVAR ABAS ABERTAS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIOS\FORMULARIO WEB BASICO.Designer.vb">
+      <DependentUpon>FORMULARIO WEB BASICO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMULARIOS\FORMULARIO WEB BASICO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\MODULO ANALISADOR DE LINKS.vb" />
+    <Compile Include="MODULOS\MODULO CHAMADOR DE APLICATIVOS.vb" />
+    <Compile Include="MODULOS\MODULO CHAMADOR DE JANELAS.vb" />
+    <Compile Include="MODULOS\MODULO DE ACOES BASICAS.vb" />
+    <Compile Include="MODULOS\MODULO DE CONSTANTES.vb" />
+    <Compile Include="MODULOS\MODULO DE EVENTOS.vb" />
+    <Compile Include="MODULOS\MODULO DE FUNCOES.vb" />
+    <Compile Include="MODULOS\MODULO DE INICIALIZADOR DE CONFIGURACOES.vb" />
+    <Compile Include="MODULOS\MODULO DE MENSAGENS AO USUARIO.vb" />
+    <Compile Include="MODULOS\MODULO DE NAVEGACAO.vb" />
+    <Compile Include="MODULOS\MODULO DE NOVAS ATUALIZACOES E AJUDA.vb" />
+    <Compile Include="MODULOS\MODULO DE OBJETOS GLOBAIS.vb" />
+    <Compile Include="MODULOS\MODULO DE PROCEDIMENTOS EXTRAS.vb" />
+    <Compile Include="MODULOS\MODULO DE PROPRIEDADES DE MOTORES GECKOFX.vb" />
+    <Compile Include="MODULOS\MODULO DE SALVAR CONFIGURACOES AO SAIR.vb" />
+    <Compile Include="MODULOS\MODULO DE SESSAO.vb" />
+    <Compile Include="MODULOS\MODULO DE SONS.vb" />
+    <Compile Include="MODULOS\MODULO FADIN.vb" />
+    <Compile Include="MODULOS\MODULO GERENCIADOR DE ABAS.vb" />
+    <Compile Include="MODULOS\MODULO GERENCIADOR DE DOWNLOADS.vb" />
+    <Compile Include="MODULOS\MODULO INTELIGENCIA DE PROCESSAMENTO.vb" />
+    <Compile Include="MODULOS\MODULO MANIPULADOR DE ARQUIVOS.vb" />
+    <Compile Include="MODULOS\MODULO VOZ DO NAVEGADOR.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FORMULARIOS\FORMULARIO CAIXA DE AVISOS.resx">
+      <DependentUpon>FORMULARIO CAIXA DE AVISOS.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMULARIOS\FORMULARIO DE FAVORITOS.resx">
+      <DependentUpon>FORMULARIO DE FAVORITOS.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMULARIOS\FORMULARIO DE NAVEGACAO PRINCIPAL.resx">
+      <DependentUpon>FORMULARIO DE NAVEGACAO PRINCIPAL.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMULARIOS\FORMULARIO DE PLUGINS INSTALADOS.resx">
+      <DependentUpon>FORMULARIO DE PLUGINS INSTALADOS.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMULARIOS\FORMULARIO DE VOZ.resx">
+      <DependentUpon>FORMULARIO DE VOZ.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMULARIOS\FORMULARIO EXIBIDOR DE HISTORICO.resx">
+      <DependentUpon>FORMULARIO EXIBIDOR DE HISTORICO.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMULARIOS\FORMULARIO GERADOR DE IMAGENS DE ABAS.resx">
+      <DependentUpon>FORMULARIO GERADOR DE IMAGENS DE ABAS.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMULARIOS\FORMULARIO GERENCIADOR DE POPUPS.resx">
+      <DependentUpon>FORMULARIO GERENCIADOR DE POPUPS.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMULARIOS\FORMULARIO INTELIGENCIA DE PROCESSAMENTO.resx">
+      <DependentUpon>FORMULARIO INTELIGENCIA DE PROCESSAMENTO.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMULARIOS\FORMULARIO PAINEL DE CONTROLE.resx">
+      <DependentUpon>FORMULARIO PAINEL DE CONTROLE.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMULARIOS\FORMULARIO SALVAR ABAS ABERTAS.resx">
+      <DependentUpon>FORMULARIO SALVAR ABAS ABERTAS.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMULARIOS\FORMULARIO WEB BASICO.resx">
+      <DependentUpon>FORMULARIO WEB BASICO.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ICONE\icone.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AB09C2C6-9006-4588-ADBE-AB92434C0A00}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Internet_Globe_1._0_Beta.My.MyApplication</StartupObject>
+    <RootNamespace>Internet_Globe_1._0_Beta</RootNamespace>
+    <AssemblyName>Internet Globe 1.0 Beta</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <ApplicationIcon>ICONES\Icone padrao 32.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Internet Globe 1.0 Beta.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Internet Globe 1.0 Beta.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2, Version=7.3.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Arquivos de programas\DotNetBar for Windows Forms\Crack\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.SpeechLib, Version=5.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Projetos de software\Extencoes de aplicativos M7\TTS\Motores\Motor 1\Interop.SpeechLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.Compatibility" />
+    <Reference Include="Skybound.Gecko, Version=1.9.2.0, Culture=neutral, PublicKeyToken=3209ac31600d1857, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Projetos de software\Nucleo do Internet Globe corrigido\Nucleo do Internet Globe 1.0 Beta\Geckofx 1.9.2.0.6\Skybound.Gecko.dll</HintPath>
+    </Reference>
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FORMULARIOS\ABAS DEMAIS.Designer.vb">
+      <DependentUpon>ABAS DEMAIS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMULARIOS\ABAS DEMAIS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIOS\DOWNLOADER.Designer.vb">
+      <DependentUpon>DOWNLOADER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMULARIOS\DOWNLOADER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIOS\ERRO AO ABRIR SITE.Designer.vb">
+      <DependentUpon>ERRO AO ABRIR SITE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMULARIOS\ERRO AO ABRIR SITE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIOS\EXIBIR IMAGEM.Designer.vb">
+      <DependentUpon>EXIBIR IMAGEM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMULARIOS\EXIBIR IMAGEM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIOS\FORMULARIO ENTRADA E SAIDA DE TEXTO.Designer.vb">
+      <DependentUpon>FORMULARIO ENTRADA E SAIDA DE TEXTO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMULARIOS\FORMULARIO ENTRADA E SAIDA DE TEXTO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\Modulo backgroundworker completado.vb" />
+    <Compile Include="MODULOS\Modulo backgroundworker trabalhar.vb" />
+    <Compile Include="MODULOS\Modulo chamador de aplicativos.vb" />
+    <Compile Include="MODULOS\Modulo dados da sessao.vb" />
+    <Compile Include="MODULOS\Modulo de backup de configuracoes do usuario.vb" />
+    <Compile Include="MODULOS\Modulo de conexao com a internet.vb" />
+    <Compile Include="MODULOS\Modulo de evento clicar na pagina.vb" />
+    <Compile Include="FORMULARIOS\FAVORITOS.Designer.vb">
+      <DependentUpon>FAVORITOS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMULARIOS\FAVORITOS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIOS\HISTORICO.Designer.vb">
+      <DependentUpon>HISTORICO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMULARIOS\HISTORICO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIOS\INFORMA ABAS ABERTAS.Designer.vb">
+      <DependentUpon>INFORMA ABAS ABERTAS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMULARIOS\INFORMA ABAS ABERTAS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIOS\LIMPADOR DE ARQUIVOS.Designer.vb">
+      <DependentUpon>LIMPADOR DE ARQUIVOS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMULARIOS\LIMPADOR DE ARQUIVOS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIOS\MENSAGENS AO USUARIO.Designer.vb">
+      <DependentUpon>MENSAGENS AO USUARIO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMULARIOS\MENSAGENS AO USUARIO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\Modulo de acoes basicas.vb" />
+    <Compile Include="MODULOS\Modulo de aplicar configuracoes.vb" />
+    <Compile Include="MODULOS\Modulo de chamar janelas.vb" />
+    <Compile Include="MODULOS\Modulo de constantes.vb" />
+    <Compile Include="MODULOS\Modulo de enderecos de arquivos.vb" />
+    <Compile Include="MODULOS\Modulo de evento progresso de pagina.vb" />
+    <Compile Include="MODULOS\Modulo de eventos em tempo de execucao.vb" />
+    <Compile Include="MODULOS\Modulo de eventos usados pelo programa geral.vb" />
+    <Compile Include="MODULOS\Modulo de funcoes e procedimentos.vb" />
+    <Compile Include="MODULOS\Modulo de historico de sites visitados.vb" />
+    <Compile Include="MODULOS\Modulo de inicializacao.vb" />
+    <Compile Include="MODULOS\Modulo de interacao entre sistemas.vb" />
+    <Compile Include="MODULOS\Modulo de mensagens ao usuario.vb" />
+    <Compile Include="MODULOS\Modulo de motores layout engine geckofx.vb" />
+    <Compile Include="MODULOS\Modulo de motores microsoft layout engine.vb" />
+    <Compile Include="MODULOS\Modulo de navegacao.vb" />
+    <Compile Include="MODULOS\Modulo de objetos backgroundworker.vb" />
+    <Compile Include="MODULOS\Modulo de paineis do motor layout engine.vb" />
+    <Compile Include="MODULOS\Modulo de processamento de arquivos e pastas.vb" />
+    <Compile Include="MODULOS\Modulo de variaveis gerais.vb" />
+    <Compile Include="MODULOS\Modulo de voz do navegador.vb" />
+    <Compile Include="MODULOS\Modulo dos objetos abas.vb" />
+    <Compile Include="MODULOS\Modulo evento mover mouse sobre motor.vb" />
+    <Compile Include="MODULOS\Modulo evento navigating dos motores layout engine.vb" />
+    <Compile Include="MODULOS\Modulo evento status text.vb" />
+    <Compile Include="MODULOS\Modulo gerador de imagens de motores layout engine.vb" />
+    <Compile Include="MODULOS\Modulo gerenciador de abas.vb" />
+    <Compile Include="MODULOS\Modulo gerenciador de janelas.vb" />
+    <Compile Include="MODULOS\Modulo imagem favicon gerada por cada backgroundworker.vb" />
+    <Compile Include="MODULOS\Modulo itens de abas referencia na barra de status.vb" />
+    <Compile Include="MODULOS\Modulo propriedades tempo de execucao.vb" />
+    <Compile Include="MODULOS\Modulo salvar configuracoes ao sair.vb" />
+    <Compile Include="MODULOS\Modulo solucionador de problemas.vb" />
+    <Compile Include="MODULOS\Modulo_de_evento_carregamento_concluido_de_pagina.vb" />
+    <Compile Include="FORMULARIOS\MOTORES PROTOTICOS.Designer.vb">
+      <DependentUpon>MOTORES PROTOTICOS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMULARIOS\MOTORES PROTOTICOS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIOS\NAVEGACAO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIOS\NAVEGACAO.Designer.vb">
+      <DependentUpon>NAVEGACAO.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="FORMULARIOS\NOVO DOWNLOAD.Designer.vb">
+      <DependentUpon>NOVO DOWNLOAD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMULARIOS\NOVO DOWNLOAD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIOS\PAINEL DE CONTROLE.Designer.vb">
+      <DependentUpon>PAINEL DE CONTROLE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMULARIOS\PAINEL DE CONTROLE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIOS\POP UP.Designer.vb">
+      <DependentUpon>POP UP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMULARIOS\POP UP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIOS\POPUPS PERMITIDAS.Designer.vb">
+      <DependentUpon>POPUPS PERMITIDAS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMULARIOS\POPUPS PERMITIDAS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIOS\RESTAURAR SESSAO ANTERIOR.Designer.vb">
+      <DependentUpon>RESTAURAR SESSAO ANTERIOR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMULARIOS\RESTAURAR SESSAO ANTERIOR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIOS\TELA DE BOAS VINDAS.Designer.vb">
+      <DependentUpon>TELA DE BOAS VINDAS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMULARIOS\TELA DE BOAS VINDAS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FORMULARIOS\ABAS DEMAIS.resx">
+      <DependentUpon>ABAS DEMAIS.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMULARIOS\DOWNLOADER.resx">
+      <DependentUpon>DOWNLOADER.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMULARIOS\ERRO AO ABRIR SITE.resx">
+      <DependentUpon>ERRO AO ABRIR SITE.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMULARIOS\EXIBIR IMAGEM.resx">
+      <DependentUpon>EXIBIR IMAGEM.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMULARIOS\FAVORITOS.resx">
+      <DependentUpon>FAVORITOS.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMULARIOS\FORMULARIO ENTRADA E SAIDA DE TEXTO.resx">
+      <DependentUpon>FORMULARIO ENTRADA E SAIDA DE TEXTO.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMULARIOS\HISTORICO.resx">
+      <DependentUpon>HISTORICO.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMULARIOS\INFORMA ABAS ABERTAS.resx">
+      <DependentUpon>INFORMA ABAS ABERTAS.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMULARIOS\LIMPADOR DE ARQUIVOS.resx">
+      <DependentUpon>LIMPADOR DE ARQUIVOS.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMULARIOS\MENSAGENS AO USUARIO.resx">
+      <DependentUpon>MENSAGENS AO USUARIO.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMULARIOS\MOTORES PROTOTICOS.resx">
+      <DependentUpon>MOTORES PROTOTICOS.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMULARIOS\NAVEGACAO.resx">
+      <DependentUpon>NAVEGACAO.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMULARIOS\NOVO DOWNLOAD.resx">
+      <DependentUpon>NOVO DOWNLOAD.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMULARIOS\PAINEL DE CONTROLE.resx">
+      <DependentUpon>PAINEL DE CONTROLE.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMULARIOS\POP UP.resx">
+      <DependentUpon>POP UP.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMULARIOS\POPUPS PERMITIDAS.resx">
+      <DependentUpon>POPUPS PERMITIDAS.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMULARIOS\RESTAURAR SESSAO ANTERIOR.resx">
+      <DependentUpon>RESTAURAR SESSAO ANTERIOR.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMULARIOS\TELA DE BOAS VINDAS.resx">
+      <DependentUpon>TELA DE BOAS VINDAS.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ICONES\Icone padrao 32.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
